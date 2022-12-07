@@ -1,3 +1,7 @@
+const { TestScheduler } = require("jest");
 const { humanCatDogYears } = require("../src");
-
-// Look Ma, no handlebars!!!
+describe("humanCatDogYears", () => {
+  test("returns human years", () => {
+    expect(humanCatDogYears(10)).toStrictlyEqual(10);
+  });
+});
