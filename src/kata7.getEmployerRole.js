@@ -1,6 +1,5 @@
 const getEmployerRole = (employeeName, employees) => {
-  const search = employees.find((obj) => obj.name === employeeName);
-  return search.role;
+  return employees.find((obj) => obj.name === employeeName).role;
 };
 
 module.exports = getEmployerRole;
